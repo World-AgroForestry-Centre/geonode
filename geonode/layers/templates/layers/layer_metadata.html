@@ -97,7 +97,8 @@
           </div>
           -->
           <div class="form-group">
-            <label for="icraf_dr_date_created" class="control-label required-field">{% trans "Date created" %}</label>
+            <!-- 20151019 rename "date created" label to "date published", set to non required -->
+            <label for="icraf_dr_date_created" class="control-label">{% trans "Date published" %}</label>
             <div class="input-group date" id="icraf_dr_date_created_picker">
               <input id="icraf_dr_date_created" class="form-control" name="icraf_dr_date_created" type="text" value="{{ layer_form.date.value|date:"Y-m-d H:i" }}">
               <span class="input-group-addon">
@@ -106,7 +107,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="icraf_dr_date_published" class="control-label">{% trans "Date published" %}</label>
+            <!-- 20151019 rename "date published" label to "date created", set to required -->
+            <label for="icraf_dr_date_published" class="control-label required-field">{% trans "Date created" %}</label>
             <div class="input-group date" id="icraf_dr_date_published_picker">
               <input id="icraf_dr_date_published" class="form-control" name="icraf_dr_date_published" type="text" value="{{ icraf_dr_main.date_published|date:"Y-m-d H:i" }}">
               <span class="input-group-addon">

@@ -331,8 +331,10 @@ class DocumentUploadView(CreateView):
             basename=form.cleaned_data['doc_file'].name, #^^
             topic_category = main_topic_category, #^^
             regions = main_regions, #^^
-            date_created=icraf_dr_date_created, #^^
-            date_published=icraf_dr_date_published, #^^
+            #^^ date_created=icraf_dr_date_created, #^^ 20151019 label swapped!
+            #^^ date_published=icraf_dr_date_published, #^^ 20151019 label swapped!
+            date_created=icraf_dr_date_published, #^^
+            date_published=icraf_dr_date_created, #^^
             date_revised=icraf_dr_date_revised #^^
         ) #^^
         
@@ -773,8 +775,10 @@ def document_metadata(
                 main.year = icraf_dr_year #^^
                 main.topic_category = main_topic_category #^^
                 main.regions = main_regions #^^
-                main.date_created = icraf_dr_date_created #^^
-                main.date_published = icraf_dr_date_published #^^
+                #^^ main.date_created = icraf_dr_date_created #^^ 20151019 label swapped!
+                #^^ main.date_published = icraf_dr_date_published #^^ 20151019 label swapped!
+                main.date_created = icraf_dr_date_published #^^
+                main.date_published = icraf_dr_date_created #^^
                 main.date_revised = icraf_dr_date_revised #^^
                 main.save() #^^
             

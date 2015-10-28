@@ -441,6 +441,32 @@ def file_upload(filename, name=None, user=None, title=None, abstract=None,
         'category': category
     }
     
+    #^^ start processing xml metadata file before form metadata fields, moved up here
+    xml_metadata_created = None #^^
+    # set metadata
+    if 'xml' in files:
+        xml_file = open(files['xml'])
+        defaults['metadata_uploaded'] = True
+        # get model properties from XML
+        vals, regions, keywords = set_metadata(xml_file.read())
+
+        for key, value in vals.items():
+            if key == 'spatial_representation_type':
+                value = SpatialRepresentationType(identifier=value)
+            elif key == 'topic_category':
+                value, created = TopicCategory.objects.get_or_create(
+                    identifier=value.lower(),
+                    defaults={'description': '', 'gn_description': value})
+                key = 'category'
+                defaults[key] = value
+            else:
+                if key == 'date': #^^
+                    print 'skipping date xml metadata' #^^
+                    xml_metadata_created = value #^^
+                else: #^^
+                    defaults[key] = value
+    #^^ end
+    
     #^^ start processing layer metadata
     metadata = None
     
@@ -551,6 +577,8 @@ def file_upload(filename, name=None, user=None, title=None, abstract=None,
             pass
     #^^ end processing layer metadata
 
+    #^^ moved before processing form metadata fields
+    """
     # set metadata
     if 'xml' in files:
         xml_file = open(files['xml'])
@@ -569,7 +597,9 @@ def file_upload(filename, name=None, user=None, title=None, abstract=None,
                 defaults[key] = value
             else:
                 defaults[key] = value
-
+    """
+    #^^
+    
     regions_resolved, regions_unresolved = resolve_regions(regions)
     keywords.extend(regions_unresolved)
 
@@ -643,6 +673,8 @@ def file_upload(filename, name=None, user=None, title=None, abstract=None,
         try:
             main = Main.objects.get(id=main_id)
             main.layer = layer
+            if xml_metadata_created:
+                main.date_created = xml_metadata_created
             main.save()
         except:
             pass

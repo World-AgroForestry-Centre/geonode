@@ -222,8 +222,10 @@ def layer_upload(request, template='upload/layer_upload.html'):
                     basename=name_base, #^^
                     topic_category = TopicCategory(id=request.POST['category_choice_field']), #^^
                     regions = request.POST['regions'], #^^
-                    date_created=icraf_dr_date_created, #^^
-                    date_published=icraf_dr_date_published, #^^
+                    #^^ date_created=icraf_dr_date_created, #^^ 20151019 labels swapped!
+                    #^^ date_published=icraf_dr_date_published, #^^ 20151019 labels swapped!
+                    date_created=icraf_dr_date_published, #^^
+                    date_published=icraf_dr_date_created, #^^
                     date_revised=icraf_dr_date_revised #^^
                 ) #^^
                 
@@ -549,8 +551,10 @@ def layer_metadata(request, layername, template='layers/layer_metadata.html'):
             'year': icraf_dr_year, #^^
             'topic_category': main_topic_category, #^^
             'regions': main_regions, #^^
-            'date_created': icraf_dr_date_created, #^^
-            'date_published': icraf_dr_date_published, #^^
+            #^^ 'date_created': icraf_dr_date_created, #^^ 20151019 label swapped!
+            #^^ 'date_published': icraf_dr_date_published, #^^ 20151019 label swapped!
+            'date_created': icraf_dr_date_published, #^^
+            'date_published': icraf_dr_date_created, #^^
             'date_revised': icraf_dr_date_revised #^^
         } #^^
         
@@ -563,8 +567,10 @@ def layer_metadata(request, layername, template='layers/layer_metadata.html'):
             main.year = icraf_dr_year #^^
             main.topic_category = main_topic_category #^^
             main.regions = main_regions #^^
-            main.date_created = icraf_dr_date_created #^^
-            main.date_published = icraf_dr_date_published #^^
+            main.date_created = icraf_dr_date_created #^^ 20151019 label swapped!
+            main.date_published = icraf_dr_date_published #^^ 20151019 label swapped!
+            main.date_created = icraf_dr_date_published #^^
+            main.date_published = icraf_dr_date_created #^^
             main.date_revised = icraf_dr_date_revised #^^
             main.save() #^^
         
