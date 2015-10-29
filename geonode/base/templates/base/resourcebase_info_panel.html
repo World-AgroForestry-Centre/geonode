@@ -41,6 +41,11 @@
         <dd itemprop="dateModified" datetime="{{ resource.date|date:"c"}}">{{ resource.date }}</dd>
       {% endif %}
     {% endif %}
+    
+    {% if icraf_dr_main.date_created %}
+    <dt>{% trans "Creation" %} {% trans "Date" %}</dt>
+    <dd itemprop="dateCreated" datetime="{{ icraf_dr_main.date_created|date:"c"}}">{{ icraf_dr_main.date_created }}</dd>
+    {% endif %}
 
     {% if resource.display_type %}
     <dt>{% trans "Type" %}</dt>

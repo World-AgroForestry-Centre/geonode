@@ -400,6 +400,11 @@ def layer_detail(request, layername, template='layers/layer_detail.html'):
         layer_dbf = None
     #^^ end
     
+    try: #^^
+        icraf_dr_main = Main.objects.get(layer=layer) #^^
+    except: #^^
+        icraf_dr_main = None #^^
+    
     context_dict = {
         "resource": layer,
         'perms_list': get_perms(request.user, layer.get_self_resource()),
@@ -408,7 +413,8 @@ def layer_detail(request, layername, template='layers/layer_detail.html'):
         "metadata": metadata,
         "is_layer": True,
         "wps_enabled": settings.OGC_SERVER['default']['WPS_ENABLED'],
-        'layer_dbf': layer_dbf #^^
+        'layer_dbf': layer_dbf, #^^
+        'icraf_dr_main': icraf_dr_main, #^^
     }
 
     context_dict["viewer"] = json.dumps(

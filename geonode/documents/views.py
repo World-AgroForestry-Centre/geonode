@@ -113,6 +113,11 @@ def document_detail(request, docid):
         if (os.path.getsize(doc_file_path) / 1024 / 1024) > MAX_CONVERT_MB: #^^
             viewdoc = False #^^
         
+        try: #^^
+            icraf_dr_main = Main.objects.get(document=document) #^^
+        except: #^^
+            icraf_dr_main = None #^^
+        
         context_dict = {
             'perms_list': get_perms(request.user, document.get_self_resource()),
             'permissions_json': _perms_info_json(document),
@@ -121,6 +126,7 @@ def document_detail(request, docid):
             'imgtypes': IMGTYPES,
             'viewdoc': viewdoc, #^^
             'viewtypes': ['csv', 'xls', 'odt', 'odp', 'ods', 'pdf', 'doc', 'docx', 'ppt', 'pptx', 'xlsx', 'dbf'], #^^
+            'icraf_dr_main': icraf_dr_main, #^^
             'related': related}
 
         if settings.SOCIAL_ORIGINS:
@@ -761,8 +767,10 @@ def document_metadata(
                 'year': icraf_dr_year, #^^
                 'topic_category': main_topic_category, #^^
                 'regions': main_regions, #^^
-                'date_created': icraf_dr_date_created, #^^
-                'date_published': icraf_dr_date_published, #^^
+                #^^ 'date_created': icraf_dr_date_created, #^^ 20151019 label swapped!
+                #^^ 'date_published': icraf_dr_date_published, #^^ 20151019 label swapped!
+                'date_created': icraf_dr_date_published, #^^
+                'date_published': icraf_dr_date_created, #^^
                 'date_revised': icraf_dr_date_revised #^^
             } #^^
             
