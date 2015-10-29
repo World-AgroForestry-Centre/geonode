@@ -134,7 +134,7 @@
           <!-- 20151019 rename "date published" label to "date created", set to required -->
           <label for="icraf_dr_date_published" class="control-label required-field">{% trans "Date created" %}</label>
           <div class="input-group date" id="icraf_dr_date_published_picker">
-            <input id="icraf_dr_date_published" class="form-control" name="icraf_dr_date_published" type="text" value="{{ icraf_dr_main.date_published|date:"Y-m-d H:i" }}">
+            <input id="icraf_dr_date_published" class="form-control" name="icraf_dr_date_published" type="text" value="{{ icraf_dr_main.date_created|date:"Y-m-d H:i" }}">
             <span class="input-group-addon">
               <span class="fa fa-calendar"></span>
             </span>
