@@ -4,7 +4,7 @@
   <dl class="dl-horizontal">
     {% if resource.title %}
     <dt>{% trans "Title" %}</dt>
-    <dd itemprop="name">{{ resource.title|truncatechars:80 }}</dd>
+    <dd itemprop="name">{{ resource.title|truncatechars:120 }}</dd>
     {% endif %}
 
     {% if resource.srid and SRID_DETAIL == 'above' %}
@@ -95,6 +95,12 @@
     <dt>{% trans "Point of Contact" %}</dt>
     <dd><a href="{{ resource.poc.user.get_absolute_url }}">{{ resource.poc.user.username }}</a></dd>
     {% endif %}
+
+    {% if icraf_dr_main.source %}
+    <dt>{% trans "Source" %}</dt>
+    <dd><a itemscope itemtype="http://schema.org/Text" href="{% url "search" %}?source__name__in={{ icraf_dr_main.source }}">{{ icraf_dr_main.source }}</a></dd>
+    {% endif %}
+
   </dl>
 
   <dl class="dl-horizontal">
@@ -173,7 +179,7 @@
     {% endif %}
 
   </div>
-
   </dl>
 
 </article>
+
