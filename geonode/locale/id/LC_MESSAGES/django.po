@@ -669,7 +669,7 @@ msgstr "Tidak"
 #: layers/templates/layers/layer_detail.html:264 templates/index.html:30
 #: templates/notification/request_download_resourcebase/full.txt:7
 msgid "Layer"
-msgid_plural "Layers"
+msgid_plural "Data Spasial"
 msgstr[0] ""
 
 #: contrib/geosites/templates/master_index.html:26 templates/index.html:31
@@ -682,11 +682,11 @@ msgstr ""
 
 #: contrib/geosites/templates/master_index.html:28 templates/index.html:33
 msgid "Add layers"
-msgstr "Tambah layer"
+msgstr "Tambah data spasial"
 
 #: contrib/geosites/templates/master_index.html:30 templates/index.html:35
 msgid "Explore layers"
-msgstr "Telusuri layer"
+msgstr "Telusuri data spasial"
 
 #: contrib/geosites/templates/master_index.html:35
 #: maps/templates/maps/map_detail.html:125 templates/index.html:40
@@ -935,7 +935,7 @@ msgstr "Dokumen ini berhubungan dengan"
 
 #: documents/templates/documents/document_detail.html:186
 msgid "This document is not related to any maps or layers"
-msgstr "Dokumen ini tidak berhubungan dengan peta atau layer"
+msgstr "Dokumen ini tidak berhubungan dengan peta atau data spasial"
 
 #: documents/templates/documents/document_detail.html:193
 #: groups/templates/groups/group_detail.html:70
@@ -1159,35 +1159,35 @@ msgstr "PNG"
 
 #: geoserver/signals.py:293
 msgid "Could not create a download link for layer."
-msgstr "Tidak dapat membuat link download untuk lapisan."
+msgstr "Tidak dapat membuat link download untuk data spasial."
 
 #: geoserver/views.py:335
 msgid "You don't have permissions to change style for this layer"
-msgstr "Anda tidak memiliki izin untuk mengubah gaya untuk lapisan ini"
+msgstr "Anda tidak memiliki izin untuk mengubah gaya untuk data spasial ini"
 
 #: geoserver/management/__init__.py:30
 msgid "Layer Uploaded"
-msgstr "Layer yang diunggah"
+msgstr "Data Spasial yang diunggah"
 
 #: geoserver/management/__init__.py:30
 msgid "A layer was uploaded"
-msgstr "layer telah diunggah"
+msgstr "Data Spasial telah diunggah"
 
 #: geoserver/management/__init__.py:31 layers/management/__init__.py:45
 msgid "Comment on Layer"
-msgstr "Komentar pada Layer"
+msgstr "Komentar pada Data Spasial"
 
 #: geoserver/management/__init__.py:31 layers/management/__init__.py:46
 msgid "A layer was commented on"
-msgstr "Layer dikomentari pada"
+msgstr "Data Spasial dikomentari pada"
 
 #: geoserver/management/__init__.py:32 layers/management/__init__.py:49
 msgid "Rating for Layer"
-msgstr "Rating Layer"
+msgstr "Rating Data Spasial"
 
 #: geoserver/management/__init__.py:32 layers/management/__init__.py:50
 msgid "A rating was given to a layer"
-msgstr "nilai telah diberikan pada layer"
+msgstr "Nilai telah diberikan pada Data Spasial"
 
 #: groups/forms.py:15
 msgid ""
@@ -1300,7 +1300,7 @@ msgstr "Seluruhnya"
 #: social/templates/social/activity_list.html:21 templates/500.html:55
 #: templates/base.html:56
 msgid "Layers"
-msgstr "Layer"
+msgstr "Data Spasial"
 
 #: groups/templates/groups/activity.html:26
 #: people/templates/people/_profile_filters.html:6
@@ -1549,7 +1549,7 @@ msgstr "terlihat?"
 
 #: layers/models.py:369
 msgid "specifies if the attribute should be displayed in identify results"
-msgstr "jika atribut ingin ditampilkan saat identifikasi layer"
+msgstr "jika atribut ingin ditampilkan saat identifikasi"
 
 #: layers/models.py:372
 msgid "display order"
@@ -1559,7 +1559,7 @@ msgstr "urutan penempatan"
 msgid ""
 "specifies the order in which attribute should be displayed in identify "
 "results"
-msgstr "urutan atribut yang ditampilkan saat identifikasi layer"
+msgstr "urutan atribut yang ditampilkan saat identifikasi"
 
 #: layers/models.py:378
 msgid "count"
@@ -1639,67 +1639,67 @@ msgstr ""
 
 #: layers/views.py:83
 msgid "You are not permitted to delete this layer"
-msgstr "Anda tidak diijinkan untuk menghapus peta ini"
+msgstr "Anda tidak diijinkan untuk menghapus data spasial ini"
 
 #: layers/views.py:84
 msgid "You do not have permissions for this layer."
-msgstr "Anda tidak memiliki izin untuk layer ini"
+msgstr "Anda tidak memiliki izin untuk data spasial ini"
 
 #: layers/views.py:85
 msgid "You are not permitted to modify this layer"
-msgstr "Anda tidak diijinkan untuk mengubah layer peta ini"
+msgstr "Anda tidak diijinkan untuk mengubah data spasial ini"
 
 #: layers/views.py:87
 msgid "You are not permitted to modify this layer's metadata"
-msgstr "Anda tidak diizinkan untuk memodifikasi metadata layer ini"
+msgstr "Anda tidak diizinkan untuk memodifikasi metadata data spasial ini"
 
 #: layers/views.py:88
 msgid "You are not permitted to view this layer"
-msgstr "Anda tidak diijinkan untuk melihat layer peta ini"
+msgstr "Anda tidak diijinkan untuk melihat data spasial ini"
 
 #: layers/views.py:760
 msgid "You are attempting to replace a vector layer with a raster."
-msgstr "Anda mencoba untuk mengganti sebuah layer vector dengan sebuah raster."
+msgstr "Anda mencoba untuk mengganti sebuah data spasial vektor dengan sebuah raster."
 
 #: layers/views.py:763
 msgid "You are attempting to replace a raster layer with a vector."
-msgstr "Anda mencoba untuk mengganti sebuah layer raster dengan sebuah vector."
+msgstr "Anda mencoba untuk mengganti sebuah data spasial raster dengan sebuah vector."
 
 #: layers/views.py:829
 msgid "Unable to delete layer"
-msgstr "Tidak dapat menghapus layer"
+msgstr "Tidak dapat menghapus data spasial"
 
 #: layers/views.py:832
 msgid ""
 "This layer is a member of a layer group, you must remove the layer from the "
 "group before deleting."
 msgstr ""
-"Layer ini adalah bagian dari sebuah grup layer, Anda harus mencopot layer "
+"Data spasial ini adalah bagian dari sebuah grup data spasial, Anda harus menghapus data spasial "
 "dari grup terlebih dahulu."
 
 #: layers/management/__init__.py:33
 msgid "Layer Created"
-msgstr "Layer Dibuat"
+msgstr "Data spasial Dibuat"
 
 #: layers/management/__init__.py:34
 msgid "A Layer was created"
-msgstr "Sebuah Layer telah dibuat"
+msgstr "Sebuah data spasial telah dibuat"
 
 #: layers/management/__init__.py:37
 msgid "Layer Updated"
-msgstr "Layer Diperbaharui"
+msgstr "Data spasial diperbaharui"
 
 #: layers/management/__init__.py:38
 msgid "A Layer was updated"
-msgstr "Sebuah Layer telah diperbaharui"
+msgstr "Sebuah data spasial telah diperbaharui"
 
 #: layers/management/__init__.py:41
 msgid "Layer Deleted"
-msgstr "Layer Dihapus"
+msgstr "Data spasial Dihapus"
 
 #: layers/management/__init__.py:42
 msgid "A Layer was deleted"
-msgstr "Sebuah Layer telah dihapus"
+msgstr "Sebuah data spasial telah dihapus"
 
 #: layers/templates/layers/layer_change_poc.html:5
 msgid "Home"
@@ -1712,7 +1712,7 @@ msgstr "Ubah Kontak"
 
 #: layers/templates/layers/layer_change_poc.html:10
 msgid "Assign a new point of contact to the layers below:"
-msgstr "Kontak baru untuk penanggungjawab layer berikut:"
+msgstr "Kontak baru untuk penanggungjawab data spasial berikut:"
 
 #: layers/templates/layers/layer_change_poc.html:17
 #: people/templates/people/forgot_username_form.html:15
@@ -1723,7 +1723,7 @@ msgstr "Proses"
 #: layers/templates/layers/layer_detail.html:167
 #: layers/templates/layers/layer_detail.html:182
 msgid "Download Layer"
-msgstr "Unduh Layer"
+msgstr "Unduh Data Spasial"
 
 #: layers/templates/layers/layer_detail.html:74
 msgid "Attribute Name"
@@ -1752,24 +1752,24 @@ msgstr "Standar Deviasi"
 
 #: layers/templates/layers/layer_detail.html:129
 msgid "Rate this layer"
-msgstr "Nilai layer ini"
+msgstr "Nilai data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:205
 msgid "Click the button below to change the permissions of this layer."
-msgstr "Klik tombol berikut untuk mengubah izin layer ini"
+msgstr "Klik tombol berikut untuk mengubah izin data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:206
 msgid "Change Layer Permissions"
-msgstr "Ubah kepemilikan layer"
+msgstr "Ubah kepemilikan data spasial"
 
 #: layers/templates/layers/layer_detail.html:213
 msgid "External service layer"
-msgstr "Lapisan layanan eksternal"
+msgstr "Data spasial layanan eksternal"
 
 #: layers/templates/layers/layer_detail.html:224
 #: layers/templates/layers/layer_detail.html:231
 msgid "Edit Layer"
-msgstr "Ubah Layer"
+msgstr "Edit Data Spasial"
 
 #: layers/templates/layers/layer_detail.html:246
 #: layers/templates/layers/layer_detail.html:356
@@ -1801,23 +1801,23 @@ msgstr "Legenda"
 
 #: layers/templates/layers/layer_detail.html:324
 msgid "Maps using this layer"
-msgstr "Peta yang menggunakan layer ini"
+msgstr "Peta yang menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:326
 msgid "List of maps using this layer:"
-msgstr "Daftar peta yang menggunakan layer ini"
+msgstr "Daftar peta yang menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:332
 msgid "This layer is not currently used in any maps."
-msgstr "Layer ini tidak digunakan pada peta manapun"
+msgstr "Data spasial ini tidak digunakan pada peta manapun"
 
 #: layers/templates/layers/layer_detail.html:337
 msgid "Create a map using this layer"
-msgstr "Buat peta menggunakan layer ini"
+msgstr "Buat peta menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:338
 msgid "Click the button below to generate a new map based on this layer."
-msgstr "Klik tombol berikut untuk membuat peta baru menggunakan layer ini"
+msgstr "Klik tombol berikut untuk membuat peta baru menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:339
 msgid "Create a Map"
@@ -1825,23 +1825,23 @@ msgstr "Buat Peta"
 
 #: layers/templates/layers/layer_detail.html:344
 msgid "Documents related to this layer"
-msgstr "Dokumen terkait dengan layer ini"
+msgstr "Dokumen terkait dengan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:345
 msgid "List of documents related to this layer:"
-msgstr "Daftar dokumen yang terkait dengan layer ini:"
+msgstr "Daftar dokumen yang terkait dengan data spasial ini:"
 
 #: layers/templates/layers/layer_detail.html:357
 msgid ""
 "The following styles are associated with this layer. Choose a style to view "
 "it in the preview map."
 msgstr ""
-"Penampilan berikut berkaitan dengan data set ini. Pilih jenis tampilan untuk "
+"Penampilan berikut berkaitan dengan data spasial ini. Pilih jenis tampilan untuk "
 "menampilkannya pada tampilan peta."
 
 #: layers/templates/layers/layer_detail.html:370
 msgid "No styles associated with this layer"
-msgstr "Tida ada style untuk layer ini"
+msgstr "Tida ada style untuk data spasial ini"
 
 #: layers/templates/layers/layer_list.html:6
 #: layers/templates/layers/layer_list.html:13
@@ -1850,14 +1850,14 @@ msgstr "Tida ada style untuk layer ini"
 #: layers/templates/upload/layer_upload.html:18
 #: layers/templates/upload/layer_upload_base.html:11
 msgid "Explore Layers"
-msgstr "Telusuri Layer"
+msgstr "Telusuri Data Spasial"
 
 #: layers/templates/layers/layer_list.html:12
 #: layers/templates/upload/layer_upload.html:19
 #: layers/templates/upload/layer_upload_base.html:12 templates/500.html:216
 #: templates/base.html:209
 msgid "Upload Layers"
-msgstr "Unggah Layer"
+msgstr "Unggah Data Spasial"
 
 #: layers/templates/layers/layer_metadata.html:18
 #, python-format
@@ -1894,7 +1894,7 @@ msgstr "Urutan tampilan"
 
 #: layers/templates/layers/layer_remove.html:9
 msgid "Remove Layers"
-msgstr "Hilangkan Layer"
+msgstr "Hilangkan Data Spasial"
 
 #: layers/templates/layers/layer_remove.html:14
 #, python-format
@@ -1911,16 +1911,16 @@ msgstr "Proses ini mempengaruhi peta berikut:"
 
 #: layers/templates/layers/layer_remove.html:34
 msgid "No maps are using this layer"
-msgstr "Tidak ada peta yang menggunakan layer ini"
+msgstr "Tidak ada peta yang menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_replace.html:5
 #: layers/templates/layers/layer_replace.html:85
 msgid "Replace Layer"
-msgstr "Ubah Layer"
+msgstr "Ubah Data Spasial"
 
 #: layers/templates/layers/layer_replace.html:19
 msgid "Replace Layer: "
-msgstr "Ubah Layer:"
+msgstr "Ubah Data Spasial:"
 
 #: layers/templates/layers/layer_replace.html:23
 #: layers/templates/upload/layer_upload.html:38
@@ -2010,7 +2010,7 @@ msgstr ""
 
 #: layers/templates/layers/layer_style_manage.html:23
 msgid "Layer Default Style"
-msgstr "Style Default Layer"
+msgstr "Style Default Data Spasial"
 
 #: layers/templates/layers/layer_style_manage.html:41
 #: layers/templates/layers/layer_style_manage.html:90
@@ -2022,12 +2022,12 @@ msgid ""
 "Click on an available style in the upper box to assign it to this layer. "
 "Selected styles appear in the lower box."
 msgstr ""
-"Klik style yang tersedia pada kotak diatas untuk diset pada layer. Pilihan "
+"Klik style yang tersedia pada kotak diatas untuk diset pada data spasial. Pilihan "
 "style tersedia pada kotak dibawah"
 
 #: layers/templates/layers/layer_style_manage.html:61
 msgid "Update Available Styles"
-msgstr "Ubah tamplan layer"
+msgstr "Ubah tamplan data spasial"
 
 #: layers/templates/layers/layer_style_manage.html:91
 msgid "Selected styles"
@@ -2037,11 +2037,11 @@ msgstr "Style yang terpilih"
 #: layers/templates/upload/layer_upload_crs.html:7
 #: layers/templates/upload/layer_upload_csv.html:7
 msgid "Upload Layer"
-msgstr "Unggah Layer"
+msgstr "Unggah Data Spasial"
 
 #: layers/templates/upload/layer_upload.html:29
 msgid "Select layer files to upload"
-msgstr "Pilih file layer untuk diunggah"
+msgstr "Pilih file data spasial untuk diunggah"
 
 #: layers/templates/upload/layer_upload.html:35
 msgid ""
@@ -2049,7 +2049,7 @@ msgid ""
 "of 4 files in .shp, .shx, .prj, and .dbf formats are required.<br>Example: "
 "shapefile.shp, shapefile.shx, shapefile.prj, shapefile.dbf"
 msgstr ""
-"Mohon agar mengunggah file layer dalam satu set dengan file name yang sama. "
+"Mohon agar mengunggah file data spasial dalam satu set dengan file name yang sama. "
 "Minimal diperlukan 4 file dalam format .shp, .shx, .prj, dan .dbf.<br> "
 "Contoh: shapefile.shp, shapefile.shx, shapefile.prj, shapefile.dbf"
 
@@ -2081,8 +2081,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"       Sistem referensi koordinat untuk layer ini tidak diketahui.\n"
-"        Masukan kode EPSG yang sesuai untuk layer dibawah ini..\n"
+"       Sistem referensi koordinat untuk data spasial ini tidak diketahui.\n"
+"        Masukan kode EPSG yang sesuai untuk data spasial dibawah ini..\n"
 "        Atau kunjungi web berikut:\n"
 "        <a href=\"http://prj2epsg.org/search\" target=\"_\">prj2epsg</a>\n"
 "        dan masukan hal berikut:\n"
@@ -2142,7 +2142,7 @@ msgid ""
 "the latitude and longitude."
 msgstr ""
 "Kami tidak mengenal kolom yang digunakan untuk lintang dan bujur.\n"
-"Silakan cek bahwa anda memiliki dua kolom pada file csv tersebtu yang dapat "
+"Silakan cek bahwa anda memiliki dua kolom pada file csv tersebut yang dapat "
 "digunakan \n"
 "sebagai lintang dan bujur."
 
@@ -2161,7 +2161,7 @@ msgstr "Unggah form"
 
 #: layers/templates/upload/layer_upload_time.html:7
 msgid "Upload Layer Step 2"
-msgstr "Unggah Layer Langkah ke-2"
+msgstr "Unggah Data Spasial Langkah ke-2"
 
 #: layers/templates/upload/layer_upload_time.html:15
 msgid "Editing details for "
