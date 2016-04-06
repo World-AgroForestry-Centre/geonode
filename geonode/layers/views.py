@@ -264,8 +264,7 @@ def layer_upload(request, template='upload/layer_upload.html'):
                     'poc': request.POST['poc'], #^^
                     'metadata_author': request.POST['metadata_author'], #^^
                     'category_choice_field': request.POST['category_choice_field'], #^^
-		    'source': icraf_dr_source, #^^
-                }) #^^
+		    }) #^^
                 
                 tempdir, base_file = form.write_files()
                 saved_layer = file_upload(
