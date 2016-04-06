@@ -98,7 +98,7 @@
 
     {% if icraf_dr_main.source %}
     <dt>{% trans "Source" %}</dt>
-    <dd><a itemscope itemtype="http://schema.org/Text" href="{% url "search" %}?source__name__in={{ icraf_dr_main.source }}">{{ icraf_dr_main.source }}</a></dd>
+    <dd>{{ icraf_dr_main.source }}</dd>
     {% endif %}
 
   </dl>
