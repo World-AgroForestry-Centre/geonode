@@ -45,27 +45,31 @@
                     {% autoescape off %}
                     <div class="radio">
                       <input type="radio" name="doc_type" value="Regulation">
-                        Regulation
+                        {% trans "Regulation" %}
                     </div>
                     <div class="radio">
                       <input type="radio" name="doc_type" value="Text Documents">
-                        Text Documents
+                        {% trans "Text Documents" %}
                     </div>
                     <div class="radio">
                       <input type="radio" name="doc_type" value="Tabular Data">
-                        Tabular Data
+                        {% trans "Tabular Data" %}
+                    </div>
+					<div class="radio">
+                      <input type="radio" name="doc_type" value="CSV Table">
+                        {% trans "CSV Table" %}
                     </div>
                     <div class="radio">
                       <input type="radio" name="doc_type" value="Pictures">
-                        Pictures
+                        {% trans "Pictures" %}
                     </div>
                     <div class="radio">
                       <input type="radio" name="doc_type" value="Static Maps">
-                        Static Maps
+                        {% trans "Static Maps" %}
                     </div>
                     <div class="radio">
                       <input type="radio" name="doc_type" value="other">
-                        Other
+                        {% trans "Other" %}
                     </div>
                     {% endautoescape %}
                   </fieldset>

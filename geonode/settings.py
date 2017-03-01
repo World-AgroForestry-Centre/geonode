@@ -594,6 +594,10 @@ PYCSW = {
 
 # GeoNode javascript client configuration
 
+# default map projection
+# Note: If set to EPSG:4326, then only EPSG:4326 basemaps will work.
+DEFAULT_MAP_CRS = "EPSG:900913"
+
 # Where should newly created maps be focused?
 DEFAULT_MAP_CENTER = (0, 0)
 
@@ -601,6 +605,13 @@ DEFAULT_MAP_CENTER = (0, 0)
 # 0 = entire world;
 # maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
 DEFAULT_MAP_ZOOM = 0
+
+ALT_OSM_BASEMAPS = os.environ.get('ALT_OSM_BASEMAPS', False)
+CARTODB_BASEMAPS = os.environ.get('CARTODB_BASEMAPS', False)
+STAMEN_BASEMAPS = os.environ.get('STAMEN_BASEMAPS', False)
+THUNDERFOREST_BASEMAPS = os.environ.get('THUNDERFOREST_BASEMAPS', False)
+MAPBOX_ACCESS_TOKEN = os.environ.get('MAPBOX_ACCESS_TOKEN', None)
+BING_API_KEY = os.environ.get('BING_API_KEY', None)
 
 MAP_BASELAYERS = [{
     "source": {"ptype": "gxp_olsource"},
@@ -616,7 +627,7 @@ MAP_BASELAYERS = [{
     "visibility": True,
     "fixed": True,
     "group": "background"
-}, {
+#}, {
 #    "source": {"ptype": "gxp_mapquestsource"},
 #    "name": "osm",
 #    "group": "background",
@@ -627,13 +638,13 @@ MAP_BASELAYERS = [{
 #    "group": "background",
 #    "visibility": False
 #}, {
-    "source": {"ptype": "gxp_bingsource"},
-    "name": "AerialWithLabels",
-    "fixed": True,
-    "visibility": False,
-    "group": "background"
-}, {
-    "source": {"ptype": "gxp_mapboxsource"},
+#    "source": {"ptype": "gxp_bingsource"},
+#    "name": "AerialWithLabels",
+#    "fixed": True,
+#    "visibility": False,
+#    "group": "background"
+#}, {
+#    "source": {"ptype": "gxp_mapboxsource"},
 }]
 
 SOCIAL_BUTTONS = True
@@ -789,8 +800,11 @@ LEAFLET_CONFIG = {
             'js': 'lib/js/Leaflet.fullscreen.min.js',
             'auto-include': True,
         },
-    }
+    },
+    'SRID': 3857,
+    'RESET_VIEW': False    
 }
+
 
 # option to enable/disable resource unpublishing for administrators
 RESOURCE_PUBLISHING = False

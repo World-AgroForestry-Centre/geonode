@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GeoNode\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-28 22:17+0700\n"
+"POT-Creation-Date: 2017-02-24 15:31+0700\n"
 "PO-Revision-Date: 2015-09-22 08:17+0000\n"
 "Last-Translator: Julien Collaer <julien.collaer@opengeode.be>\n"
 "Language-Team: Indonesian (http://www.transifex.com/geonode/geonode/language/"
@@ -155,11 +155,11 @@ msgstr "data diperbaharui setiap tiga bulan sekali"
 msgid "No information provided"
 msgstr "Tidak tersedia informasi"
 
-#: base/forms.py:43 base/templates/base/resourcebase_info_panel.html:63
+#: base/forms.py:43 base/templates/base/resourcebase_info_panel.html:68
 #: documents/templates/documents/document_metadata.html:88
 #: documents/templates/documents/document_metadata.html:309
-#: documents/templates/documents/document_upload.html:100
-#: documents/templates/documents/document_upload.html:312
+#: documents/templates/documents/document_upload.html:104
+#: documents/templates/documents/document_upload.html:316
 #: layers/templates/layers/layer_metadata.html:69
 #: layers/templates/layers/layer_metadata.html:244
 #: layers/templates/upload/layer_upload.html:115
@@ -280,7 +280,7 @@ msgstr "penjelasan umum dari produser data mengenai sejarah dataset"
 
 #: base/models.py:240
 #: base/templates/base/_resourcebase_contact_snippet.html:10
-#: base/templates/base/resourcebase_info_panel.html:85
+#: base/templates/base/resourcebase_info_panel.html:90
 msgid "Owner"
 msgstr "Wali data"
 
@@ -333,7 +333,7 @@ msgid "restrictions other"
 msgstr "batasan lain"
 
 #: base/models.py:264 base/templates/base/resourcebase_info_panel.html:16
-#: base/templates/base/resourcebase_info_panel.html:109
+#: base/templates/base/resourcebase_info_panel.html:120
 msgid "License"
 msgstr "Lisensi"
 
@@ -447,7 +447,7 @@ msgid "Owner, Point of Contact, Metadata Author"
 msgstr "Wali data, Point of Contact, Metadata Penulis"
 
 #: base/templates/base/_resourcebase_contact_snippet.html:14
-#: base/templates/base/resourcebase_info_panel.html:90
+#: base/templates/base/resourcebase_info_panel.html:95
 #: documents/templates/documents/document_metadata.html:34
 #: documents/templates/documents/document_metadata.html:297
 #: layers/templates/layers/layer_metadata.html:37
@@ -468,7 +468,7 @@ msgid "Title"
 msgstr "Judul"
 
 #: base/templates/base/resourcebase_info_panel.html:11
-#: base/templates/base/resourcebase_info_panel.html:104
+#: base/templates/base/resourcebase_info_panel.html:115
 msgid "SRID"
 msgstr ""
 
@@ -485,67 +485,84 @@ msgid "Less"
 msgstr "Kurangi"
 
 #: base/templates/base/resourcebase_info_panel.html:35
+#: base/templates/base/resourcebase_info_panel.html:46
 #: contrib/exif/templates/exif/_exif_document_detail.html:13
 #: templates/search/_general_filters.html:47
 msgid "Date"
 msgstr "Tanggal"
 
 #: base/templates/base/resourcebase_info_panel.html:46
+#, fuzzy
+msgid "Creation"
+msgstr "Membuat"
+
+#: base/templates/base/resourcebase_info_panel.html:51
 #: documents/templates/documents/document_metadata.html:58
 #: documents/templates/documents/document_upload.html:44
 #: layers/templates/layers/layer_detail.html:215
 msgid "Type"
 msgstr "Tipe"
 
-#: base/templates/base/resourcebase_info_panel.html:51 groups/models.py:44
+#: base/templates/base/resourcebase_info_panel.html:56 groups/models.py:44
 #: people/templates/people/profile_detail.html:78
 #: templates/search/_general_filters.html:19
 msgid "Keywords"
 msgstr "Kata Kunci"
 
-#: base/templates/base/resourcebase_info_panel.html:73
+#: base/templates/base/resourcebase_info_panel.html:78
 #: templates/search/_region_filter.html:5
 msgid "Regions"
 msgstr "Wilayah"
 
-#: base/templates/base/resourcebase_info_panel.html:96
+#: base/templates/base/resourcebase_info_panel.html:100
+#: documents/templates/documents/document_metadata.html:175
+#: documents/templates/documents/document_upload.html:121
+#: documents/templates/documents/document_upload.html:222
+#: layers/templates/layers/layer_detail.html:214
+#: layers/templates/layers/layer_metadata.html:147
+#: layers/templates/upload/layer_upload.html:132
+#: layers/templates/upload/layer_upload.html:231
+msgid "Source"
+msgstr "Sumber"
+
+#: base/templates/base/resourcebase_info_panel.html:107
 msgid "More info"
 msgstr "Info selebihnya"
 
-#: base/templates/base/resourcebase_info_panel.html:122
+#: base/templates/base/resourcebase_info_panel.html:133
 msgid "Maintenance Frequency"
 msgstr "Frekuensi Pemeliharaan"
 
-#: base/templates/base/resourcebase_info_panel.html:127
+#: base/templates/base/resourcebase_info_panel.html:138
 msgid "Restrictions"
 msgstr "Batasan"
 
-#: base/templates/base/resourcebase_info_panel.html:136
+#: base/templates/base/resourcebase_info_panel.html:147
 msgid "Edition"
 msgstr "Edisi"
 
-#: base/templates/base/resourcebase_info_panel.html:141
+#: base/templates/base/resourcebase_info_panel.html:152
 msgid "Purpose"
 msgstr "Tujuan"
 
-#: base/templates/base/resourcebase_info_panel.html:146 templates/500.html:154
+#: base/templates/base/resourcebase_info_panel.html:157 templates/500.html:154
 #: templates/base.html:147
 msgid "Language"
 msgstr "Bahasa"
 
-#: base/templates/base/resourcebase_info_panel.html:151
+#: base/templates/base/resourcebase_info_panel.html:162
 msgid "Temporal Extent"
 msgstr "Periode waktu"
 
-#: base/templates/base/resourcebase_info_panel.html:156
+#: base/templates/base/resourcebase_info_panel.html:167
 msgid "Data Quality"
 msgstr "Kualitas Data"
 
-#: base/templates/base/resourcebase_info_panel.html:161
+#: base/templates/base/resourcebase_info_panel.html:172
 msgid "Supplemental Information"
 msgstr "Informasi tambahan"
 
-#: base/templates/base/resourcebase_info_panel.html:166
+#: base/templates/base/resourcebase_info_panel.html:177
 msgid "Spatial Representation Type"
 msgstr "Tipe Representasi Spasial"
 
@@ -669,7 +686,7 @@ msgstr "Tidak"
 #: layers/templates/layers/layer_detail.html:264 templates/index.html:30
 #: templates/notification/request_download_resourcebase/full.txt:7
 msgid "Layer"
-msgid_plural "Data Spasial"
+msgid_plural "Layers"
 msgstr[0] ""
 
 #: contrib/geosites/templates/master_index.html:26 templates/index.html:31
@@ -782,19 +799,19 @@ msgstr "Anda tidak diizinkan untuk memodifikasi metadata dokumen ini"
 msgid "You are not permitted to view this document"
 msgstr "Anda tidak diizinkan untuk melihat dokumen ini"
 
-#: documents/views.py:85 documents/views.py:152 documents/views.py:163
+#: documents/views.py:85 documents/views.py:158 documents/views.py:169
 msgid "You are not allowed to view this document."
 msgstr "Anda tidak diizinkan untuk melihat dokumen ini"
 
-#: documents/views.py:702
+#: documents/views.py:708
 msgid "You are not allowed to edit this document."
 msgstr "Anda tidak diizinkan untuk mengedit dokumen ini."
 
-#: documents/views.py:835 layers/views.py:630
+#: documents/views.py:843 layers/views.py:636
 msgid "You must set a point of contact for this resource"
 msgstr "Anda harus tentukan kontak untuk sumberdaya ini"
 
-#: documents/views.py:850 layers/views.py:645
+#: documents/views.py:858 layers/views.py:651
 msgid "You must set an author for this resource"
 msgstr "Anda harus tentukan pengarang untuk sumberdaya ini"
 
@@ -983,7 +1000,7 @@ msgstr "Kesalahan pembaharuan metadata. Silakan cek field berikut:"
 
 #: documents/templates/documents/document_metadata.html:49
 #: documents/templates/documents/document_upload.html:33
-#: documents/templates/documents/document_upload.html:152
+#: documents/templates/documents/document_upload.html:156
 #: layers/templates/layers/layer_metadata.html:59
 #: layers/templates/upload/layer_upload.html:167
 msgid "Please complete the required fields below."
@@ -1000,51 +1017,41 @@ msgid "Update"
 msgstr "Ubah"
 
 #: documents/templates/documents/document_metadata.html:97
-#: documents/templates/documents/document_upload.html:108
+#: documents/templates/documents/document_upload.html:112
 #: layers/templates/layers/layer_metadata.html:77
 #: layers/templates/upload/layer_upload.html:123
 msgid "Coverage"
 msgstr "Cakupan"
 
 #: documents/templates/documents/document_metadata.html:124
-#: documents/templates/documents/document_upload.html:172
+#: documents/templates/documents/document_upload.html:176
 #: layers/templates/layers/layer_metadata.html:101
 #: layers/templates/upload/layer_upload.html:185
 msgid "Date published"
 msgstr "Tanggal dipublikasi"
 
 #: documents/templates/documents/document_metadata.html:135
-#: documents/templates/documents/document_upload.html:182
+#: documents/templates/documents/document_upload.html:186
 #: layers/templates/layers/layer_metadata.html:111
 #: layers/templates/upload/layer_upload.html:195
 msgid "Date created"
 msgstr "Tanggal dibuat"
 
 #: documents/templates/documents/document_metadata.html:145
-#: documents/templates/documents/document_upload.html:191
+#: documents/templates/documents/document_upload.html:195
 #: layers/templates/layers/layer_metadata.html:120
 #: layers/templates/upload/layer_upload.html:204
 msgid "Date revised"
 msgstr "Tanggal direvisi"
 
 #: documents/templates/documents/document_metadata.html:167
-#: documents/templates/documents/document_upload.html:127
-#: documents/templates/documents/document_upload.html:210
+#: documents/templates/documents/document_upload.html:131
+#: documents/templates/documents/document_upload.html:214
 #: layers/templates/layers/layer_metadata.html:139
 #: layers/templates/upload/layer_upload.html:142
 #: layers/templates/upload/layer_upload.html:223
 msgid "Year"
 msgstr "Tahun"
-
-#: documents/templates/documents/document_metadata.html:175
-#: documents/templates/documents/document_upload.html:117
-#: documents/templates/documents/document_upload.html:218
-#: layers/templates/layers/layer_detail.html:214
-#: layers/templates/layers/layer_metadata.html:147
-#: layers/templates/upload/layer_upload.html:132
-#: layers/templates/upload/layer_upload.html:231
-msgid "Source"
-msgstr "Sumber"
 
 #: documents/templates/documents/document_metadata.html:303
 #: layers/templates/layers/layer_metadata.html:286
@@ -1102,12 +1109,41 @@ msgstr "Unggah Dokumen"
 msgid "Select document file to upload"
 msgstr "Pilih file dokumen untuk diunggah"
 
-#: documents/templates/documents/document_upload.html:145
+#: documents/templates/documents/document_upload.html:48
+msgid "Regulation"
+msgstr "Peraturan"
+
+#: documents/templates/documents/document_upload.html:52
+#, fuzzy
+msgid "Text Documents"
+msgstr "Dokumen Teks"
+
+#: documents/templates/documents/document_upload.html:56
+msgid "Tabular Data"
+msgstr "Data Tabel"
+
+#: documents/templates/documents/document_upload.html:60
+msgid "CSV Table"
+msgstr "Tabel CSV"
+
+#: documents/templates/documents/document_upload.html:64
+msgid "Pictures"
+msgstr "Gambar"
+
+#: documents/templates/documents/document_upload.html:68
+msgid "Static Maps"
+msgstr "Peta Cetak"
+
+#: documents/templates/documents/document_upload.html:72
+msgid "Other"
+msgstr "Lain-lainnya"
+
+#: documents/templates/documents/document_upload.html:149
 #: layers/templates/upload/layer_upload.html:160
 msgid "Edit metadata"
 msgstr "Ubah metadata"
 
-#: documents/templates/documents/document_upload.html:334
+#: documents/templates/documents/document_upload.html:338
 #: layers/templates/upload/layer_upload.html:346
 #: templates/search/_sort_filters.html:15
 msgid "Set permissions"
@@ -1657,25 +1693,27 @@ msgstr "Anda tidak diizinkan untuk memodifikasi metadata data spasial ini"
 msgid "You are not permitted to view this layer"
 msgstr "Anda tidak diijinkan untuk melihat data spasial ini"
 
-#: layers/views.py:760
+#: layers/views.py:766
 msgid "You are attempting to replace a vector layer with a raster."
-msgstr "Anda mencoba untuk mengganti sebuah data spasial vektor dengan sebuah raster."
+msgstr ""
+"Anda mencoba untuk mengganti sebuah data spasial vektor dengan sebuah raster."
 
-#: layers/views.py:763
+#: layers/views.py:769
 msgid "You are attempting to replace a raster layer with a vector."
-msgstr "Anda mencoba untuk mengganti sebuah data spasial raster dengan sebuah vector."
+msgstr ""
+"Anda mencoba untuk mengganti sebuah data spasial raster dengan sebuah vector."
 
-#: layers/views.py:829
+#: layers/views.py:835
 msgid "Unable to delete layer"
 msgstr "Tidak dapat menghapus data spasial"
 
-#: layers/views.py:832
+#: layers/views.py:838
 msgid ""
 "This layer is a member of a layer group, you must remove the layer from the "
 "group before deleting."
 msgstr ""
-"Data spasial ini adalah bagian dari sebuah grup data spasial, Anda harus menghapus data spasial "
-"dari grup terlebih dahulu."
+"Data spasial ini adalah bagian dari sebuah grup data spasial, Anda harus "
+"menghapus data spasial dari grup terlebih dahulu."
 
 #: layers/management/__init__.py:33
 msgid "Layer Created"
@@ -1817,7 +1855,8 @@ msgstr "Buat peta menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:338
 msgid "Click the button below to generate a new map based on this layer."
-msgstr "Klik tombol berikut untuk membuat peta baru menggunakan data spasial ini"
+msgstr ""
+"Klik tombol berikut untuk membuat peta baru menggunakan data spasial ini"
 
 #: layers/templates/layers/layer_detail.html:339
 msgid "Create a Map"
@@ -1836,8 +1875,8 @@ msgid ""
 "The following styles are associated with this layer. Choose a style to view "
 "it in the preview map."
 msgstr ""
-"Penampilan berikut berkaitan dengan data spasial ini. Pilih jenis tampilan untuk "
-"menampilkannya pada tampilan peta."
+"Penampilan berikut berkaitan dengan data spasial ini. Pilih jenis tampilan "
+"untuk menampilkannya pada tampilan peta."
 
 #: layers/templates/layers/layer_detail.html:370
 msgid "No styles associated with this layer"
@@ -2022,8 +2061,8 @@ msgid ""
 "Click on an available style in the upper box to assign it to this layer. "
 "Selected styles appear in the lower box."
 msgstr ""
-"Klik style yang tersedia pada kotak diatas untuk diset pada data spasial. Pilihan "
-"style tersedia pada kotak dibawah"
+"Klik style yang tersedia pada kotak diatas untuk diset pada data spasial. "
+"Pilihan style tersedia pada kotak dibawah"
 
 #: layers/templates/layers/layer_style_manage.html:61
 msgid "Update Available Styles"
@@ -2049,8 +2088,8 @@ msgid ""
 "of 4 files in .shp, .shx, .prj, and .dbf formats are required.<br>Example: "
 "shapefile.shp, shapefile.shx, shapefile.prj, shapefile.dbf"
 msgstr ""
-"Mohon agar mengunggah file data spasial dalam satu set dengan file name yang sama. "
-"Minimal diperlukan 4 file dalam format .shp, .shx, .prj, dan .dbf.<br> "
+"Mohon agar mengunggah file data spasial dalam satu set dengan file name yang "
+"sama. Minimal diperlukan 4 file dalam format .shp, .shx, .prj, dan .dbf.<br> "
 "Contoh: shapefile.shp, shapefile.shx, shapefile.prj, shapefile.dbf"
 
 #: layers/templates/upload/layer_upload.html:195
